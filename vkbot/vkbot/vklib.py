@@ -37,8 +37,15 @@ class vkapi:
          self.clientAppID = clientAppID
          
     def authorize(login,passwd):
-        
-        oath = 
+        '''
+        https://oauth.vk.com/authorize?
+        client_id=1&display=page&redirect_uri=http://example.com/callback&scope=frien
+        ds&response_type=token&v=5.53&state=123456
+        '''
+        oauth = {'client_id',selft.clientAppID,'display','page',
+                 'redirect_url','https://oauth.vk.com/blank.html',
+                 'scope','frieds'}
+                  
 
         
         
