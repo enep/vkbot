@@ -1,10 +1,10 @@
 
-
+#!/usrbin/python
 # -*- coding: utf-8 -*-
 '''
 #
 #  vklib.py
-#  
+#  o
 #  Copyright 2016 Igor Kolocnhenko <enepunixoid@gmail.com>
 #  
 #  This program is free software; you can redistribute it and/or modify
@@ -21,18 +21,27 @@
 #  along with this program; if not, write to the Free Software
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #  MA 02110-1301, USA.
-#  
-#  
+#   
 '''
+import requests
 import re
 from lxml.html import fromstring, tostring
 
 class vkapi:
+    net = 0
+    header = 0
+    clientAppID = 0
     
-    test = 'hhhhhhhhh'
-    
-    def __init__(self):
-        self.test = 'init'
+    def __init__(self,clientAppID,appname):
+         selft.header = {'user-agent'.appname}
+         self.clientAppID = clientAppID
+         
+    def authorize(login,passwd):
+        
+        oath = 
+
+        
+        
 
 
 
