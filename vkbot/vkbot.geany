@@ -23,9 +23,14 @@ long_line_behaviour=0
 long_line_column=72
 
 [files]
+<<<<<<< HEAD
 current_page=1
 FILE_NAME_0=0;Python;0;EUTF-8;0;1;0;%2Fmedia%2Fenep%2FData1%2FGitHub%2FENEP%2Fvkbot%2Fvkbot%2Fvkbot%2Fnetlib.py;0;4
 FILE_NAME_1=0;Python;0;EUTF-8;0;1;0;%2Fmedia%2Fenep%2FData1%2FGitHub%2FENEP%2Fvkbot%2Fvkbot%2Fvkbot%2Fvklib.py;0;4
+=======
+current_page=0
+FILE_NAME_0=1535;Python;0;EUTF-8;0;1;0;%2Fhome%2Fenep%2FGitHub%2Fvkbot%2Fvkbot%2Fvkbot%2Fvklib.py;0;4
+>>>>>>> 80754a22443ebc417a774a3000e6e445736452fd
 
 [VTE]
 last_dir=/home/enep
