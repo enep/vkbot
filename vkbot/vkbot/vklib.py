@@ -27,10 +27,12 @@ import requests
 import re
 from lxml.html import fromstring, tostring
 
-class vkapi:
+class vkapi(object):
     net = 0
     header = 0
     clientAppID = 0
+    scope = 'friends'
+    response_url = 'https://oauth.vk.com/blank.html'
     
     def __init__(self,clientAppID,appname):
          selft.header = {'user-agent'.appname}
@@ -43,8 +45,12 @@ class vkapi:
         ds&response_type=token&v=5.53&state=123456
         '''
         oauth = {'client_id',selft.clientAppID,'display','page',
-                 'redirect_url','https://oauth.vk.com/blank.html',
-                 'scope','frieds'}
+                 'redirect_url',self.response_url,
+                 'scope',self.scope,'response_type','token'}
+        res = requests.get('https://oauth.vk.com/authorize',oauth)
+        
+        form = res.read();
+        
                   
 
         
