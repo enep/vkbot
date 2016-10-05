@@ -40,9 +40,9 @@ class vkapi(object):
          
     def authorize(login,passwd):
         
-        oauth = {'client_id',selft.clientAppID,'display','page',
-                 'redirect_url',self.response_url,
-                 'scope',self.scope,'response_type','token'}
+        oauth = {'client_id':selft.clientAppID,'display':'page',
+                 'redirect_url':self.response_url,
+                 'scope':self.scope,'response_type':'token'}
         res = requests.get('https://oauth.vk.com/authorize',oauth)
         
         form = res.read();
