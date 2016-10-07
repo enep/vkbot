@@ -48,6 +48,8 @@ class vkapi(object):
 		params["scope"] = self.scope
 		params["response_type"]="token"
 		
-		res = request.get(url,params)
+		try:
+			res = requests.get(url,params)
+		except requests.
 		
 		
