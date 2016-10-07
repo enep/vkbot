@@ -23,7 +23,21 @@
 #  
 import regests 
 import re
-
+class siteProvider(obbject):
+	hostname="http://" """URL Сайта"""
+	images[] = 0 """Список ссылок на картинка """
+	last_scan_date =  0 
+	
+	__init__(self,url):
+		...
+	
+	getImage():
+		...
+	
+	
+	
+	
+	
 class  GetImgsSitesPost(object):
 	
 	__init__(self):
