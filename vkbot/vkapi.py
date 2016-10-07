@@ -23,3 +23,31 @@ import sys
 
 class vkapi(object):
 	
+	redirect_url = ''
+	scope = 0  '''Разрешение прав доступа'''
+	access_token = ''
+	client_id = 
+	
+	"""
+	https://oauth.vk.com/authorize?
+	client_id=1&display=page&redirect_uri=http://example.com/callback
+	&scope=friends&response_type=token&v=5.57&state=123456
+
+ 
+	"""
+	def __init__(self,_ci,_ru,_scope):
+		self.redirect_url == _ru
+		self.scope = _scope
+		self.client_id = _ci
+	
+	def auth(login,passwd):
+		url = "https://oauth.vk.com/authorize"
+		params["client_id"] = self.client_id
+		params["display"] = "mobile"
+		params["redirecct_url"] = self.redirect_url
+		params["scope"] = self.scope
+		params["response_type"]="token"
+		
+		res = request.get(url,params)
+		
+		
